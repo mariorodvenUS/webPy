@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+		<meta charset="UTF-8">
+		<link rel="icon" type="image/ico" href="{{url_for('static', filename='img/favicon.ico')}}"/>
+        <link rel="stylesheet" href="{{url_for('static',filename='css/footer.css')}}">
+        <link rel="stylesheet" href="{{url_for('static',filename='css/header.css')}}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="{{url_for('static',filename='fontawesome/css/all.css')}}" rel="stylesheet">
+        <link href="{{url_for('static',filename='fontawesome/css/brands.css')}}" rel="stylesheet">
+		{% block head %}{% endblock %}
+
+	</head>
+
+    <body>
+        <!-- MENU -->
+        <nav>
+            <div class="logo"><a href="/"><img src="{{url_for('static', filename='img/logo_azul.png')}}" alt="ESIBot"></a></div>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/#galeria">Galería</a></li>
+                <li><a href="/quienes_somos">Quiénes Somos</a></li>
+                <li>
+                    <label for="btn-1" class="show">Cursos</label>
+                    <a href="/cursos">Cursos</a>
+                    <input type="checkbox" id="btn-1">
+                    <ul>
+                        <li><a href="/cursos/diseno">Diseño 3D</a></li>
+                        <li><a href="/cursos/python">Python</a></li>
+                        <li><a href="/cursos/robotica">Robótica</a></li>
+                    </ul>
+                </li>
+                <li><a href="/noticias">Noticias</a></li>
+                <li><a href="/impresion">Impresión 3D</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <!-- BODY -->
+        {% block body %}{% endblock %}
+        <!-- FOOTER -->
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="/">
+                            <img src="{{url_for('static', filename='img/logo_rojo.png')}}" alt="Logo ESIBot">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>SOBRE NOSOTROS</h2>
+                    <p>Somos la asociación de robótica con la que podrás aprender y divertirte. Estamos en la Escuela Técnica Superior de Ingeniería <b>(ETSI)</b> de la Universidad de Sevilla.</p>
+                    <p>Puedes encontrarnos en el taller de asociaciones (segunda puerta a la derecha), dentro del aula de cultura de la ETSI.</p>
+                    <p class="red-social">También puedes encontrar todos los enlaces a nuestras redes y los formularios de inscripción haciendo click <b><a href="https://linktr.ee/esibot">AQUÍ</a></b>.</p> 
+                </div>
+                <div class="box" id="contacto">
+                    <h2>CONTACTO</h2>
+                    <div class="red-social">
+                        <ul>
+                            <li><span class="fa-brands fa-instagram"></span>&ensp;<a href="https://www.instagram.com/esibot_etsi/">@esibot_etsi</a></li>
+                            <li><span class="fa-brands fa-twitter"></span>&ensp;<a href="https://twitter.com/ESIBot">@ESIBot</a></li>
+                            <li><span class="fa-solid fa-envelope"></span>&ensp;<a href="mailto:esibot.esi@gmail.com">esibot.esi@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2022 <b>ESIBot</b> - Todos los Derechos Reservados.</small>
+            </div>
+        </footer>
+    </body>
+</html>

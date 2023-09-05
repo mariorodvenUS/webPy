@@ -1,0 +1,77 @@
+{%extends 'base.html'%}
+{%block head%}
+<title>ESIBot | Noticias</title>
+<!-- CSS -->
+<link rel="stylesheet" href="{{url_for('static',filename='css/noticias.css')}}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- Font Awesome -->
+<link href="{{url_for('static',filename='fontawesome/css/all.css')}}" rel="stylesheet">
+<link href="{{url_for('static',filename='fontawesome/css/brands.css')}}" rel="stylesheet">
+{%endblock%}
+{%block body%}	
+<!-- TÍTULO -->
+<div class="titulos" >
+	<h2>TABLÓN DE NOTICIAS</h2>
+	<h3>¡Entérate de todo lo que está pasando!</h3>
+</div>
+
+<!-- NOTICIAS -->
+<div class="container-cards">
+<div class="cards">
+	<div class="card">
+		<div class="container">
+			<img src="{{url_for('static',filename='img/noticias/proyectos.jpg')}}">
+		</div>
+		<div class="details">
+			<h3>Abiertas las inscripciones a los proyectos</h3>
+			<p>La primera semana de octubre abriremos las inscripcciones a algunos de los proyectos que vamos a realizar a lo largo de este curso, las cuales podéis consultar en nuestro linktr.ee, <a href="https://linktr.ee/esibot">https://linktr.ee/esibot</a></p>
+			<p>No olvidéis que la participación en los proyectos es totalmente opcional, pero una vez os inscribáis, se os solicitará un mínimo de compromiso para garantizar que todo sigue adelante (dentro de los límites comprensibles, nadie te va a echar una bronca si avisas de que tienes una convocatoria o cosas por el estilo 😬)</p>
+			<p>Os recuerdo, además, que en caso de ser demasiada gente para un proyecto, nos podremos reservar el derecho de admisión y hacer entrevistas personales a los candidatos para elegir a los más cualificados para el trabajo. Si tienes cualquier duda o sugerencia, no dudes en escribirnos en nuestras <a href="#contacto">redes sociales</a> y estaremos encantados de escucharte.</p>
+		</div>
+	</div>
+	<div class="card">
+		<div class="container">
+			<img src="{{url_for('static',filename='img/noticias/texto-informativo.jpg')}}">
+		</div>
+		<div class="details">
+			<h3>¡No te pierdas la próxima reunión informativa!</h3>
+			<p>Holaa!! Somos ESIBot, una asociación de la universidad especializada en la robótica, la telemática y el diseño 3D.</p>
+			<p>Este lunes 26 de septiembre vamos a realizar una reunión donde informaremos de todos los cursos, proyectos y excursiones para el curso 2022/23, además de cómo unirte a nuestro equipo.</p>
+			<p>Se realizarán dos sesiones para que puedas asistir a la que mejor se adapte a ti.</p>
+			<p>		🔧 Lunes 26 a las 12:40h en el aula 008 de la escuela.</p>
+			<p>		🔧 Lunes 26 a las 20:30 online a través de Discord.</p>
+			<p>Os dejamos el enlace a discord y a nuestras redes a continuación</p> 
+			<p><a href="https://linktr.ee/esibot">https://linktr.ee/esibot</a></p>
+		</div>
+	</div>
+	<div class="card">
+		<div class="container">
+			<img src="{{url_for('static',filename='img/noticias/internet.jpg')}}">
+		</div>
+		<div class="details">
+			<h3>¡Tenemos nueva página web!</h3>
+			<p>Nuestra nueva división de telemática está trabajando para montar una nueva página web<i>(ya era hora...).</i></p>
+			<p>Algunas partes de la web todavía están un poco verde🌱, pero esperamos poder ofreceros acceso a algunos de nuestros servicios cuanto antes (🎓cursos, 🔩reserva de impresión 3D, 🎤comunicados, ...)</p>
+			<p>Si tienes alguna sugerencia de cosas que te gustaría ver o si estás interesado en ayudar, sólo tienes que ponerte en contaco con nosotros mediante nuestras <a href="#contacto">redes sociales</a> o escribiéndonos un <a href="#contacto">correo</a>.</p>
+		</div>
+	</div>
+	<div class="card">
+		<div class="container">
+			<img src="{{url_for('static',filename='img/noticias/etsi.jpg')}}">
+		</div>
+		<div class="details">
+			<h3>Curso nuevo, vida nueva</h3>
+			<p>¡Comenzamos un nuevo curso!</p>
+			<p>Volver a clase y decir adiós al sol, a la playa y a las cervecitas un miércoles por la mañana no es algo que le agrade a nadie...</p>
+			<p>Por suerte, este curso, en <b>ESIBot</b> estamos llenos de proyectos, cursos y excursiones que te alegrarán esos interminables días que te vas a tener que pasar en la ETSI encerrado🥱😴</p>
+			<p>Todavía no hemos revelado todos los detalles, pero lo que sí os puedo contar es que vamos a visitar sitios chulísimos y súper interesantes.</p>
+			<p>En cuanto a los cursos... Algunos los repetimos de otros años, otros los hemos modificado para adaptarse al <i>feedback</i> que recibimos el curso pasado e incluso hay cursos totalmente nuevos que esperamos os resulten tan interesantes como a nosotros impartirlos 🤗</p>
+			<p>Si lo que estás leyendo te interesa o si tienes algún proyecto que te gustaría realizar, tan sólo tienes que hablar con nosotros para unirte a la asociación y vivir la experiencia ESIBot por completo.</p>
+			<p><i>¡Te esperamos en el taller!</i></p>
+		</div>
+	</div>
+</div>
+</div>
+{%endblock%}

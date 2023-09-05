@@ -1,0 +1,167 @@
+{%extends 'base.html'%}
+{%block head%}
+<title>ESIBot</title>
+<!-- CSS -->
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+{%endblock%}
+
+{%block body%}		
+<!-- QUIÉNES SOMOS -->
+<div class="logo-grande"><img src="{{url_for('static', filename='img/logo_grande.jpg')}}" alt="ESIBot"></div>
+
+<div class="titulos" id="quienes-somos">
+	<h2>¿QUIÉNES SOMOS?</h2>
+	<h3>Es una larga historia...</h3>
+</div>
+<section class="wrapper">
+	<div class="container">
+		<article class="card card--stripe">
+			<h2 class="card__title">ORIGEN</h2>
+			<p><b>ESIBot</b> se funda en 2005, aunque comienza sus actividades públicas en 2009… ¡Tenemos casi <b>18 años</b> de experiencia!</p>
+		</article>
+
+		<article class="card card--stripe">
+			<h2 class="card__title">CURSOS</h2>
+			<p>Con <b>ESIBot</b> tendrás la oportunidad de asistir a una serie de cursos para que aprendas a trabajar con nosotros.</p>
+		</article>
+
+		<article class="card card--stripe">
+			<h2 class="card__title">EXCURSIONES</h2>
+			<p>Organizamos <b>excursiones</b> guiadas a sitios de interés para toda clase de aficionados a la tecnología y a la innovación.</p>
+		</article>
+
+		<article class="card card--stripe">
+			<h2 class="card__title">PROYECTOS</h2>
+			<p>¡Únete a trabajar en cualquiera de nuestros proyectos o tráete uno propio! Te ayudaremos a hacer tus ideas realidad.</p>
+		</article>
+	</div>
+	<button class="boton dos">
+		<a href="quienes_somos"><span>Más información</span></a>
+	</button>
+</section>
+
+<!-- CURSOS -->
+
+<div class="titulos" id="cursos">
+	<h2>CURSOS</h2>
+	<h3>¡Aprende con nosotros!</h3>
+</div>
+
+<div class="contenedor">
+<div class="slider-contenedor">
+	<section class="contenido-slider">
+		<div>
+			<h2>Python</h2>
+			<h3>Python es uno de los lenguajes de programación más sencillos de aprender y más útiles para todo tipo de público. ¡Desarrolla tus habilidades de programación con nosotros!</h3>
+			<button class="boton uno">
+				<a href="/cursos/python"><span>¡Me interesa!</span></a>
+			</button>
+		</div>
+		<img src="" alt="">
+	</section>
+	<section class="contenido-slider">
+		<div>
+			<h2>Robótica</h2>
+			<h3>En este curso aprenderás los fundamentos básicos de los pilares que sostienen a la robótica: electrónica, diseño y control.
+				La metodología de enseñanza comprenderá: Lecciones teóricas, ejercicios teóricos, lecciones prácticas, y aplicaciones a Arduino.</h3>
+			<button class="boton uno">
+				<a href="/cursos/robotica"><span>¡Me interesa!</span></a>
+			</button>
+		</div>
+		<img src="" alt="">
+	</section>
+	</section>
+	<section class="contenido-slider">
+		<div>
+			<h2>Diseño e Impresión 3D</h2>
+			<h3>FreeCAD es una herramienta de diseño 3D que es empleada por empresas y aficionados para plasmar ideas en modelos que pueden ser impresos a posteriori.</h3>
+			<button class="boton uno">
+				<a href="/cursos/diseno"><span>¡Me interesa!</span></a>
+			</button>
+		</div>
+		<img src="" alt="">
+	</section>
+</div>
+</div>
+
+<!-- NOTICIAS -->
+<div class="titulos" id="noticias">
+	<h2>NOTICIAS</h2>
+	<h3>¡Entérate de lo que está pasando!</h3>
+</div>
+
+<div class="blog-card">
+<div class="meta">
+	<div class="photo" style="background-image: url('static/img/noticias/proyectos.jpg')"></div>
+</div>
+<div class="description">
+	<h1>Abiertas las inscripciones a los proyectos</h1>
+	<p class="read-more">
+		<a href="noticias">Leer Más</a>
+	</p>
+</div>
+</div>
+
+<div class="blog-card alt">
+	<div class="meta">
+		<div class="photo" style="background-image: url('static/img/noticias/texto-informativo.jpg')"></div>
+	</div>
+	<div class="description">
+		<h1>¡No te pierdas la próxima reunión informativa!</h1>
+		<p class="read-more">
+			<a href="noticias">Leer Más</a>
+		</p>
+	</div>
+</div>
+
+<div class="blog-card">
+	<div class="meta">
+		<div class="photo" style="background-image: url(static/img/noticias/internet.jpg)"></div>
+	</div>
+	<div class="description">
+		<h1>¡Tenemos nueva página web!</h1>
+		<p class="read-more">
+			<a href="noticias">Leer Más</a>
+		</p>
+	</div>
+</div>
+
+
+<!-- GALERIA -->
+
+<div class="gal">
+	<div class="titulos" id="galeria">
+		<h2>GALERÍA</h2>
+		<h3>Para más fotos, consulta nuestras RRSS</h3>
+	</div>
+	<div class="lightbox">
+			<div class="lightbox-item" data-src="{{url_for('static',filename='img/galeria/arduino_600.png')}}" data-caption="Uno de nuestro famosos 🤖<b><i>Tupperbots</i></b>🤖 en construcción.">
+				<img src="{{url_for('static',filename='img/galeria/arduino.jpg')}}">
+			</div>
+			<div class="lightbox-item" data-src="{{url_for('static',filename='img/galeria/impresora_600.png')}}" data-caption="Una de las impresoras de nuestro taller cumpliendo su función de impresora. 🙃">
+				<img src="{{url_for('static',filename='img/galeria/impresora.jpg')}}">
+			</div>
+			<div class="lightbox-item" data-src="{{url_for('static',filename='img/galeria/kit_600.png')}}" data-caption="Preparando los kits para nuestro curso de arduino... Antiguamente los vendíamos para que os quedáseis los componentes, quién sabe si volveremos a hacerlo 🤔">
+				<img src="{{url_for('static',filename='img/galeria/kit.jpg')}}">
+			</div>
+			<div class="lightbox-item" data-src="{{url_for('static',filename='img/galeria/trabajando_600.png')}}" data-caption="Algunos de los antiguos miembro de <b>ESIBot</b> <i>(2019)</i> trabajando para hacer de la asociación lo que es hoy.">
+				<img src="{{url_for('static',filename='img/galeria/trabajando.jpg')}}">
+			</div>
+			<div class="lightbox-item" data-src="{{url_for('static',filename='img/galeria/seminario_600.png')}}" data-caption="Uno de nuestros antiguos seminarios de organización de proyectos... ¡Qué tiempos aquellos!👴🧓👵">
+				<img src="{{url_for('static',filename='img/galeria/seminario.jpeg')}}">
+			</div>
+	</div>
+</div>
+
+
+
+<!-- SCRIPTS -->
+<script type="text/javascript" src="{{url_for('static',filename='js/main.js')}}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="{{url_for('static',filename='js/galeria.js')}}"></script>
+<script>
+	// lighten up with lightbox
+	$('.lightbox').lightboxify();
+</script>
+{%endblock%}
