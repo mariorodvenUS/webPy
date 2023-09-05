@@ -65,6 +65,7 @@ img{
     display: block;
     border-radius: 20px 20px 0 0;
     height: auto;
+    
 }
 .container:after{
     content: "";
@@ -85,20 +86,26 @@ img{
     font-weight: 600;
     font-size: 20px;
     margin: 10px 0 15px 0;
+    
 }
 .details>p{
-    color: #a0a0a0;
-    font-size: 15px;
+    color: #484848;
+    font-size: 17px;
     line-height: 20px;
 	padding-bottom: 10px;
     font-weight: 400;
 	text-align: justify;
 	text-justify: inter-word;
+    margin-bottom: 15px;
+}
+
+.details>h3+p{
+    margin-bottom: 10px;
 }
 
 .details a{
-	color: #34495E;
+	color: #035db7;
 }
 .details a:hover{
-	color: #489395;
+	color: #3db4b8;
 }
